@@ -1,4 +1,9 @@
+# Libft Functions
+
+
 Here are mnemonic explanations for the listed functions to help you remember how they work:
+
+## Compulsory
 
 **1. isalpha:** Is it a letter?
 

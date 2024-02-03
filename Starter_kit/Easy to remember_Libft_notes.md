@@ -1,7 +1,9 @@
 Here are mnemonic explanations for the listed functions to help you remember how they work:
 
-**1. isalpha:**Is it a letter?
-**2. isdigit:**Is it a digit?
+**1. isalpha:** Is it a letter?
+
+**2. isdigit:** Is it a digit?
+
 3. isalnum: Is it alphanumeric (letter or digit)?
 4. isascii: Is it within ASCII range?
 5. isprint: Is it a printable character?

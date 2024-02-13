@@ -50,7 +50,7 @@ re: fclean all: A target to rebuild the project from scratch.
 
 
 
-Organization Summary
+## Organization Summary
 
 - Project Setting and Configuration
     - Establishes the foundational settings like the compiler, output name, and compilation flags.

@@ -1,6 +1,5 @@
 # Makefile
 
-
 ## 1. Configuración del Proyecto
 
 Esta sección incluye la configuración inicial y los detalles de configuración necesarios para el proceso de construcción.
@@ -51,3 +50,39 @@ RESUMEN
 - Instrucciones de Compilación y Enlace: Proporciona instrucciones detalladas sobre cómo compilar y enlazar los archivos del proyecto.
 - Gestión de la Construcción: Ofrece objetivos para construir, limpiar y reconstruir el proyecto, facilitando el mantenimiento fácil del proyecto.
 - Directivas Especiales: Mejora la funcionalidad del Makefile con directivas como .PHONY para aclarar el propósito de ciertos objetivos.
+
+
+
+## Ejemplo
+
+
+NAME = OUTPUT_NAME
+CC = gcc
+CFLAG = -Wall -Werror -Wextra
+SRC_FILES = ft_atoi.c \
+		      	ft_toupper.c
+
+HEADER = libft.h
+LIBC = ar rcs
+
+OBJS = $(SRC_FILES:.c=.o)
+
+%.o: %.c
+	$(CC) -c $(CFLAG) $^
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	$(LIBC) $(NAME) $(OBJS)
+
+clean:
+	rm -f $(OBJS)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
+
+

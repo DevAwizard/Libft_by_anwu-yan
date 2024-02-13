@@ -10,6 +10,7 @@ Based on level of difficulty:
 
 Easy functions
 
+
 These functions are basic and fundamental for handling characters, strings, memory, and simple conversions:
 
 int		ft_isalnum(int c);                                                             |  Checks if the character is alphanumeric.

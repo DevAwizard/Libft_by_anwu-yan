@@ -13,13 +13,16 @@ Al decidir entre usar size_t o unsigned (asumiendo que te refieres a unsigned in
 ## unsigned int
 
 **- Propósito:** Un unsigned int es un tipo de entero de propósito general que no incluye valores negativos. Se utiliza típicamente cuando necesitas valores numéricos no negativos dentro de un rango que está garantizado por el estándar para ser de al menos 16 bits, comúnmente 32 bits en muchas plataformas.
-**- Portabilidad:** El tamaño exacto de unsigned int puede variar según la implementación, aunque a menudo es de 32 bits en muchas plataformas. Esto significa que puede no ser siempre lo suficientemente grande para contener el tamaño de asignaciones de memoria o arrays en sistemas con grandes cantidades de memoria, especialmente en sistemas de 64 bits.
+
+**- Portabilidad:** El tamaño exacto de unsigned int puede variar según la implementación, aunque a menudo es de 32 bits en muchas plataformas. Esto significa que puede no ser siempre lo suficientemente grande para contener el tamaño de asignaciones de memoria o arrays en sistemas con grandes cantidades de memoria, 
+especialmente en sistemas de 64 bits.
+
 **- Caso de Uso:** Adecuado para contadores, banderas y otros valores numéricos donde se espera que el tamaño del valor no exceda los límites de un unsigned int. No está diseñado específicamente para tamaños de memoria o tamaños de objetos.
 
 ## Haciendo la Elección
-Para Tamaños y Conteos: Usa size_t cuando trates con tamaños (por ejemplo, de arrays, cadenas) o conteos de elementos que podrían alcanzar potencialmente el espacio direccionable máximo de la plataforma. Esto es especialmente importante para código que debe ser portátil entre arquitecturas de 32 bits y 64 bits.
+**- Para Tamaños y Conteos:** Usa size_t cuando trates con tamaños (por ejemplo, de arrays, cadenas) o conteos de elementos que podrían alcanzar potencialmente el espacio direccionable máximo de la plataforma. Esto es especialmente importante para código que debe ser portátil entre arquitecturas de 32 bits y 64 bits.
 
-Para Valores Numéricos Generales: Usa unsigned int para valores numéricos generales donde estés seguro de que el rango de valor no excederá sus límites, y el valor no está representando un tamaño de memoria o conteo de elementos.
+**- Para Valores Numéricos Generales:** Usa unsigned int para valores numéricos generales donde estés seguro de que el rango de valor no excederá sus límites, y el valor no está representando un tamaño de memoria o conteo de elementos.
 
 ## Resumen
 

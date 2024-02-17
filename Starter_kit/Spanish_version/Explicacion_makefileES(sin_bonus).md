@@ -57,12 +57,16 @@ RESUMEN
 
 
 NAME = OUTPUT_NAME
+
 CC = gcc
+
 CFLAG = -Wall -Werror -Wextra
+
 SRC_FILES = ft_atoi.c \
-		      	ft_toupper.c
+           ft_toupper.c
 
 HEADER = libft.h
+
 LIBC = ar rcs
 
 OBJS = $(SRC_FILES:.c=.o)

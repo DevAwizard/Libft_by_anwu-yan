@@ -1,4 +1,6 @@
-# Makefile
+
+![N|Makefile](Makefile_logo.png)
+
 
 ## 1. Configuración del Proyecto
 

@@ -1,5 +1,7 @@
 # Makefile
 
+Functions/Makefile
+
 ##  1. Project Configuration
 
 This section includes the initial setup and configuration details necessary for the build process.
@@ -99,3 +101,6 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
+
+
+

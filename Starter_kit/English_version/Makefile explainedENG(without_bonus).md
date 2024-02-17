@@ -1,7 +1,6 @@
 
 
-
-[![N|Makefile](Makefile_logo.png)]
+![N|Makefile](Makefile_logo.png)
 
 
 ##  1. Project Configuration

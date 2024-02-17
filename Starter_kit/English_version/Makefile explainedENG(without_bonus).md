@@ -1,5 +1,7 @@
 # Makefile
 
+https://github.com/DevAwizard/Libft/blob/89930bdd7c86aff55b6db9c433dc64d735f0d4f2/Functions/Makefile
+
 ##  1. Project Configuration
 
 This section includes the initial setup and configuration details necessary for the build process.
@@ -62,3 +64,43 @@ re: fclean all: A target to rebuild the project from scratch.
     - Offers targets for building, cleaning, and rebuilding the project, facilitating easy project maintenance.
 - Special Directives
     - Enhances the functionality of the Makefile with directives like .PHONY to clarify the purpose of certain targets.
+
+--- 
+
+# Example
+
+NAME = OUTPUT_NAME
+
+CC = gcc
+
+CFLAG = -Wall -Werror -Wextra
+
+SRC_FILES = ft_atoi.c \
+           ft_toupper.c
+
+HEADER = libft.h
+
+LIBC = ar rcs
+
+OBJS = $(SRC_FILES:.c=.o)
+
+%.o: %.c
+	$(CC) -c $(CFLAG) $^
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	$(LIBC) $(NAME) $(OBJS)
+
+clean:
+	rm -f $(OBJS)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
+
+
+

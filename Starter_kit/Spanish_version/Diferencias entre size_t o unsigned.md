@@ -8,6 +8,7 @@ Al decidir entre usar size_t o unsigned (asumiendo que te refieres a unsigned in
 **- Propósito:** size_t está específicamente diseñado para representar el tamaño de cualquier objeto (incluidos los arrays) en bytes. Es el tipo devuelto por el operador sizeof y se utiliza en funciones de la biblioteca estándar para la asignación de memoria (malloc, calloc, realloc), manipulación de cadenas (strlen, strncpy, memcpy) y otras funciones que tratan con tamaños o conteos de elementos.
 
 **- Portabilidad:** Está garantizado que es lo suficientemente grande como para contener el tamaño del objeto más grande posible en la plataforma objetivo. Esto lo hace particularmente adecuado para contadores de bucles e indexación de arrays cuando se trata de estructuras de datos cuyo tamaño puede variar en diferentes plataformas (por ejemplo, sistemas de 32 bits vs. 64 bits).
+
 **- Caso de Uso:** Recomendado para cálculos de tamaño de memoria, indexación de arrays y en cualquier lugar donde necesites representar el tamaño de objetos. Usar size_t puede ayudar a hacer tu código más portátil y claro sobre su propósito.
 
 ## unsigned int

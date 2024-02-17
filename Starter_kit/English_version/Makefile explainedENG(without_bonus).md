@@ -1,6 +1,6 @@
 # Makefile
 
-Functions/Makefile
+https://github.com/DevAwizard/Libft/blob/89930bdd7c86aff55b6db9c433dc64d735f0d4f2/Functions/Makefile
 
 ##  1. Project Configuration
 

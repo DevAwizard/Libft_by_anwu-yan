@@ -1,3 +1,6 @@
+
+<img src="https://img.shields.io/badge/c-%23A8B9CC.svg?&style=for-the-badge&logo=c&logoColor=black" />
+
 # Project introduction
 
 This is my first project completed at 42 School, where the primary goal is to create a custom C library, `libft`, which consists of various standard and additional functions that will be invaluable throughout the curriculum.
